@@ -61,7 +61,7 @@ class App extends React.Component {
     return (
       <div>
         <form onSubmit={e => this.handleSubmit(e)}>
-          <input type="text" placeholder='请输入内容' onChange={e => this.handelChange(e)}/>
+          <input type="text" placeholder='请输入内容' value={this.state.nowTodo} onChange={e => this.handelChange(e)}/>
           <input type='submit'/>
         </form>
         <ul>
